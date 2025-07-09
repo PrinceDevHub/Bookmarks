@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container Styling */
+main {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Header Styling */
+header h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Bookmark Form Styling */
+.bookmark-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bookmark-form input[type="url"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.bookmark-form input[type="url"]:focus {
+    border-color: #4e8ef7;
+    outline: none;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4e8ef7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3575e1;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Bookmarks List Styling */
+.bookmarks {
+    margin-top: 20px;
+}
+
+#bookmarksList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#bookmarksList li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#bookmarksList li a {
+    color: #4e8ef7;
+    text-decoration: none;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+#bookmarksList li a:hover {
+    text-decoration: underline;
+}
+
+#bookmarksList li button {
+    background-color: #f44336;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+#bookmarksList li button:hover {
+    background-color: #d32f2f;
+}
